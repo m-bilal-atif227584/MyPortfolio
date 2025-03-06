@@ -1,0 +1,110 @@
+.navv{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hero{
+    background: url('/src/assets/herobg.png') no-repeat center center/cover;
+}
+.heroname{
+        background: linear-gradient(to left bottom, #cab2ff, #6a24ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.herocont{
+    padding-right: 60px;
+    padding-left: 130px;
+}
+.scrollanim{
+    padding: 6px;
+    margin: 3px;
+    border: 3px solid #aaa6c3;
+}
+  
+  .mov{
+    border-radius: 100px;
+    filter: blur(10px);
+    transition: linear ease-in-out 1s;
+    background: #915eff;
+    animation: move-glow 6s linear infinite;
+  }
+  
+  @keyframes move-glow {
+    0% {
+      transform: translate(-765%, -850%);
+    }
+    25% {
+      transform: translate(765%, -850%);
+    }
+    50% {
+      transform: translate(765%, 850%);
+    }
+    75% {
+      transform: translate(-765%, 850%);
+    }
+    100% {
+      transform: translate(-765%, -850%);
+    }
+  }
+ .service-card,
+ .projcard{
+  padding: 1px;
+    box-shadow: 0px 35px 120px -15px #211e35;
+ } 
+  
+.cardd{
+    padding: 20px 48px;
+}
+.serr{
+    margin-top: 80px;
+}
+.tech{
+    margin-top: 40px;
+}
+.secc{
+    padding: 64px 64px;
+    margin: auto;
+}
+@media (max-width : 990px) {
+    .herocont{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+.proj{
+    margin-top: 80px;
+}
+.blackk{
+    margin: 5px;
+}
+.coo{
+  margin-top: 20px;
+}
+.dis{
+  margin-top: 8px;
+}
+.tagg{
+  margin-top: 16px;
+}
+.inn{
+  padding: 20px;
+}
+@media (min-width: 1280px) {
+  .mt-xl-12 {
+    margin-top: 3rem; /* 48px */
+  }
+}
+.mot{
+  padding: 32px;
+}
+.mtt{
+  margin-top: 48px;
+}
+.mbb{
+  margin-bottom: 16px;
+}
+.padd{
+  padding: 16px 24px;
+}
+.paddi{
+  padding: 12px 32px;
+}
