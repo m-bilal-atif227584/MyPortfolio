@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { menu, close } from '../assets'
+import { menu, close} from '../assets'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
 
@@ -27,7 +28,7 @@ const Navbar = () => {
     <nav className={`navv ${styles.paddingX} w-full flex justify-center items-center fixed top-0 z-20 ${ scrolled ? "bg-[#050816]" : "bg-transparent" }`}>
       <div className="naiv flex w-full justify-between items-center max-w-7xl">
         <Link to="/" className='flex items-center gap-2' onClick={() => {setActive(""); window.scrollTo(0, 0);}}>
-        <img src="src/assets/logo.png" alt="logo" className='logo w-9 h-9 object-contain' />
+        <img src={logo} alt="logo" className='logo w-9 h-9 object-contain' />
         <p className='text-white text-[44px] cursor-pointer sm:block hidden'>|</p>
         <p className='text-white text-[18px] font-bold cursor-pointer sm:block hidden'>M Bilal Atif Usmani</p>
         </Link>
