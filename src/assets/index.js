@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -31,7 +30,6 @@ import blog from "./blog.png"
 import cinema from "./cinema.png"
 
 export {
-  logo,
   backend,
   creator,
   mobile,
