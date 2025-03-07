@@ -69,6 +69,12 @@
         padding-left: 10px;
     }
 }
+@media (max-width : 490px) {
+  .secc{
+    padding: 64px 20px;
+    margin: auto;
+  }
+}
 .proj{
     margin-top: 80px;
 }
