@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+
+const Computer = React.lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
   return (
@@ -16,11 +18,13 @@ const Hero = () => {
           <p className={`${styles.heroSubText} text-[#f3f3f3] mt-2`}>I develop seamless, visually stunning, user-friendly <br className='sm:block hidden' /> interfaces and high-performance web and mobile applications</p>
         </div>
       </div>
-      <ComputersCanvas />
+      <Suspense fallback={<div></div>}>
+      <Computer />
+      </Suspense>
       <div className="absolute @min-xs:bottom-32 bottom-10 w-full flex justify-center items-center">
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#aaa6c3] flex justify-center items-start'>
-            <motion.dev animate={{ y: [0, 30, 0] }} transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }} className='scrollanim w-3 h-3 rounded-full bg-[black]' />
+            <motion.div animate={{ y: [0, 30, 0] }} transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }} className='scrollanim w-3 h-3 rounded-full bg-[black]' />
           </div>
         </a>
       </div>

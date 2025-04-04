@@ -2,7 +2,7 @@
   padding: 20px 20px;
 }
 .hero{
-    background: url('/src/assets/herobg.png') no-repeat center center/cover;
+    background: url('assets/herobg.webp') no-repeat center center/cover;
 }
 .heroname{
         background: linear-gradient(to left bottom, #cab2ff, #6a24ff);
@@ -74,6 +74,9 @@
     padding: 64px 20px;
     margin: auto;
   }
+  .hero{
+    background-position: left;
+  }
 }
 .proj{
     margin-top: 80px;
@@ -115,4 +118,23 @@
 }
 .naiv{
   margin: auto;
+}
+.tecnam{
+  transition: all ease-in-out 0.5s;
+  animation: anitext 3s ease-in-out 0s infinite ;
+}
+@keyframes anitext {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.skillimge:hover{
+  filter: drop-shadow(0px 7px 20px #bf61ff);
+  transform: scale(1.1);
 }

@@ -1,29 +1,23 @@
-import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    blog,
-    chat,
-    cinema,
-    threejs,
-  } from "../assets";
+import mobile from '../assets/mobile.png'
+import backend from '../assets/backend.png'
+import creator from '../assets/creator.png'
+import web from '../assets/web.png'
+import javascript from '../assets/tech/javascript.png'
+import typescript from '../assets/tech/typescript.png'
+import html from '../assets/tech/html.png'
+import css from '../assets/tech/css.png'
+import reactjs from '../assets/tech/reactjs.png'
+import redux from '../assets/tech/redux.png'
+import tailwind from '../assets/tech/tailwind.png'
+import nodejs from '../assets/tech/nodejs.png'
+import mongodb from '../assets/tech/mongodb.png'
+import git from '../assets/tech/git.png'
+import figma from '../assets/tech/figma.png'
+import docker from '../assets/tech/docker.png'
+import blog from '../assets/blog.webp'
+import chat from '../assets/chat.webp'
+import food from '../assets/food.jpeg'
+import threejs from "../assets/tech/threejs.svg"
   
   export const navLinks = [
     {
@@ -49,14 +43,14 @@ import {
       title: "Web Developer",
       icon: web,
     },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
+    // {
+    //   title: "React Native Developer",
+    //   icon: mobile,
+    // },
+    // {
+    //   title: "Backend Developer",
+    //   icon: backend,
+    // },
     {
       title: "React js Developer",
       icon: creator,
@@ -92,14 +86,14 @@ import {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    // {
+    //   name: "Node JS",
+    //   icon: nodejs,
+    // },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
     // {
     //   name: "Three JS",
     //   icon: threejs,
@@ -122,7 +116,7 @@ import {
     {
       title: "React.js Developer",
       company_name: "Starbucks",
-      icon: starbucks,
+      icon: '',
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
@@ -135,7 +129,7 @@ import {
     {
       title: "React Native Developer",
       company_name: "Tesla",
-      icon: tesla,
+      icon: '',
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
@@ -148,7 +142,7 @@ import {
     {
       title: "Web Developer",
       company_name: "Shopify",
-      icon: shopify,
+      icon: '',
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
       points: [
@@ -161,7 +155,7 @@ import {
     {
       title: "Full stack Developer",
       company_name: "Meta",
-      icon: meta,
+      icon: '',
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
@@ -203,8 +197,10 @@ import {
   const projects = [
     {
       name: "Chat Application",
+      // description:
+      //   "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Full stack web-based platform that allows users to create account, add their friends and chat them via text messages.",
       tags: [
         {
           name: "react",
@@ -220,12 +216,13 @@ import {
         },
       ],
       image: chat,
-      source_code_link: "",
+      source_code_link: "https://github.com/m-bilal-atif227584/Full-stack-Chat-Application",
+      link:"https://chatmate227584.netlify.app/",
     },
     {
       name: "Blog Application",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Full stack web application that allows users to create account, post blogs publically and read blogs posted by others.",
       tags: [
         {
           name: "react",
@@ -241,12 +238,13 @@ import {
         },
       ],
       image: blog,
-      source_code_link: "",
+      source_code_link: "https://github.com/m-bilal-atif227584/Full-stack-Blog-Posting-App",
+      link:"https://postcloud.netlify.app/",
     },
     {
-      name: "Cinema Management System",
+      name: "Food Ordering Website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A food ordering website with frontend only.",
       tags: [
         {
           name: "html",
@@ -260,13 +258,10 @@ import {
           name: "javaScript",
           color: "pink-text-gradient",
         },
-        {
-          name: "GSAP",
-          color: "blue-text-gradient",
-        },
       ],
-      image: cinema,
-      source_code_link: "",
+      image: food,
+      source_code_link: "https://github.com/m-bilal-atif227584/Food-ordering-website",
+      link:"https://foodweb2275.netlify.app/",
     },
   ];
   
