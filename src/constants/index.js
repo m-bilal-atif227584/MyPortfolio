@@ -18,7 +18,10 @@ import blog from '../assets/blog.webp'
 import chat from '../assets/chat.webp'
 import food from '../assets/food.jpeg'
 import threejs from "../assets/tech/threejs.svg"
-  
+import appwrite from "../assets/tech/appwrite-removebg-preview.png"
+import firebase from "../assets/tech/firebase-removebg-preview.png"
+import watch from "../assets/e-commerce.jpeg"
+
   export const navLinks = [
     {
       id: "about",
@@ -99,7 +102,7 @@ import threejs from "../assets/tech/threejs.svg"
     //   icon: threejs,
     // },
     {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     // {
@@ -110,6 +113,14 @@ import threejs from "../assets/tech/threejs.svg"
     //   name: "docker",
     //   icon: docker,
     // },
+    {
+      name: "Firebase",
+      icon: firebase,
+    },
+    {
+      name: "Appwrite",
+      icon: appwrite,
+    }
   ];
   
   const experiences = [
@@ -242,26 +253,26 @@ import threejs from "../assets/tech/threejs.svg"
       link:"https://postcloud.netlify.app/",
     },
     {
-      name: "Food Ordering Website",
+      name: "E-Commerce Website",
       description:
-        "A food ordering website with frontend only.",
+        "Full stack website that allows users to order products, review about purchased products. It notifies admin about order and its details via email.",
       tags: [
         {
-          name: "html",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
+          name: "appwrite",
           color: "green-text-gradient",
         },
         {
-          name: "javaScript",
+          name: "nodemailer",
           color: "pink-text-gradient",
         },
       ],
-      image: food,
-      source_code_link: "https://github.com/m-bilal-atif227584/Food-ordering-website",
-      link:"https://foodweb2275.netlify.app/",
+      image: watch,
+      source_code_link: "https://github.com/m-bilal-atif227584/Prestige-Co-Frontend",
+      link:"https://prestigeandco.shop/",
     },
   ];
   
